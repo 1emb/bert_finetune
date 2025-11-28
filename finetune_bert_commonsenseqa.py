@@ -194,7 +194,7 @@ def main():
     # Training arguments
     training_args = TrainingArguments(
         output_dir=output_dir,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         learning_rate=learning_rate,
         per_device_train_batch_size=batch_size,
